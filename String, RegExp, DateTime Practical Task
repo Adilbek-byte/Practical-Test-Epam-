@@ -1,0 +1,17 @@
+let str = 'ahb acb aeb aeeb adcb axeb';
+let matches = str.match(/a.b/g);
+console.log(matches); // ['ahb', 'acb', 'aeb']
+//Given the string ‘2 + 3 223 2223’. Write a regex that finds line 2 + 3 without capturing the rest
+let str = '2 + 3 223 2223';
+let match = str.match(/2 \+ 3/);
+console.log(match[0]); // '2 + 3'
+
+//Get the day, month and year of the current date and output it to the console separately
+
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+console.log('Day: ' + day);
+console.log('Month: ' + month);
+console.log('Year: ' + year);
