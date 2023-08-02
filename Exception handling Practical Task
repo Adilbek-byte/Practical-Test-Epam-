@@ -1,0 +1,12 @@
+try {
+  console.log(a);                                                                         // 'a' is not yet declared, so this will throw an error
+  let a = 3;
+} catch (error) {
+  console.error("Error:", error.message);                      // Output: "Error: Cannot access 'a' before initialization"
+}
+
+try {
+  console.log(1 / 0);                                                             // Division by zero will throw an error
+} catch (error) {
+  console.error("Error:", error.message);                 // Output: "Error: Division by zero"
+}
