@@ -1,0 +1,61 @@
+// 1. Create a car object with a color property
+const car = {
+  color: 'black',
+};
+
+// 2. Change the color property of the car object to 'green'
+car.color = 'green';
+
+// 3. Add the power property to the car object, which is a function displaying engine power
+car.power = function() {
+  console.log('Engine Power: 200HP');
+};
+
+// 4. Function to return the result of adding the number of accepted pears and apples
+function addFruits(pears, apples) {
+  return pears + apples;
+}
+
+// 5. Function to define the name in the payment terminal
+function greetName(name) {
+  if (name) {
+    return 'Hello ' + name;
+  } else {
+    return 'There is no such name';
+  }
+}
+
+// 6. Function to calculate the type of argument and output to the console
+function checkType(arg) {
+  console.log('Type of argument: ' + typeof arg);
+}
+
+// 7. Function to determine whether a number is prime or not
+function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// Test the functions
+console.log(car.color); // Output: "green"
+car.power(); // Output: "Engine Power: 200HP"
+
+const totalFruits = addFruits(3, 5);
+console.log(totalFruits); // Output: 8
+
+console.log(greetName('John')); // Output: "Hello John"
+console.log(greetName('')); // Output: "There is no such name"
+
+checkType(42); // Output: "Type of argument: number"
+checkType('Hello'); // Output: "Type of argument: string"
+checkType(true); // Output: "Type of argument: boolean"
+
+console.log(isPrime(17)); // Output: true
+console.log(isPrime(10)); // Output: false
