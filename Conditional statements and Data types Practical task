@@ -1,0 +1,44 @@
+// String + Boolean
+const stringBoolResult = "Hello" + true;   // "Hellotrue"
+
+// String + Number
+const stringNumberResult = "10" + 5;      // "105"
+
+// Number + Boolean
+const numberBoolResult = 10 + true;     // 11
+
+
+// String * Boolean (Implicit Conversion)
+const stringBoolImplicitResult = "Hello" * true;      // NaN
+
+// String * Number (Implicit Conversion)
+const stringNumberImplicitResult = "10" * 5;         // 50
+
+// Number * Boolean (Implicit Conversion)
+const numberBoolImplicitResult = 10 * true;       // 10
+
+// String / Boolean (Implicit Conversion)
+const stringBoolImplicitDivResult = "Hello" / true;     // NaN
+
+// String / Number (Implicit Conversion)
+const stringNumberImplicitDivResult = "10" / 5;          // 2
+
+// Number / Boolean (Implicit Conversion)
+const numberBoolImplicitDivResult = 10 / true;         // 10
+
+Explicit Type Conversion
+to convert to a number 
+
+const strToNumber = Number("10");                          // 10
+const boolToNumber = Number(true);                       // 1
+const numToString = (10).toString();                           // "10"
+
+To convert to a String:
+
+const numToString = String(10);                                  // "10"
+const boolToString = String(true);                            // "true"
+
+To convert to a Boolean
+
+const strToBool = Boolean("Hello");                  // true (Any non-empty string is truthy)
+const numToBool = Boolean(0);                        // false (0 is falsy)
