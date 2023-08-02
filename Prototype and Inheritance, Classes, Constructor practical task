@@ -1,0 +1,8 @@
+let animal = {
+    move: function() {
+        console.log('The animal is moving');
+    }
+};
+
+let cat = Object.create(animal);
+cat.move(); // The animal is moving
