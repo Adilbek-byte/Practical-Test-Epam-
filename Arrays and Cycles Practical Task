@@ -1,0 +1,31 @@
+Array, 60));
+
+//Implement a loop that will print the number 'a' until it is less than 10:
+let a = 1;
+while (a < 10) {
+  console.log(a);
+  a++;
+}
+//Implement a loop that prints prime numbers to the console:
+function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+for (let i = 2; i <= 20; i++) {
+  if (isPrime(i)) {
+    console.log(i);
+  }
+}
+
+//Implement a loop that prints odd numbers to the console:
+for (let i = 1; i <= 20; i += 2) {
+  console.log(i);
+}
